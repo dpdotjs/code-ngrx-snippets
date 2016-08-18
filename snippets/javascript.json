@@ -1,0 +1,40 @@
+{
+    "ngrx Reducer": {
+	"prefix": "ngrxr",
+	"body": [
+        "import { Action } from '@ngrx/store';",
+        "import { ${ACTIONSNAME} } from '../actions/${ACTIONPATH}';",
+        "",
+        "export interface ${STATENAME} {",
+        "  ",
+        "}",
+        "const initialState: ${STATENAME} = {",
+        "  ",
+        "};",
+        "",
+        "export default function(state = initialState, action: Action): ${STATENAME} {",
+        "  switch (action.type) {",
+        "    case ${ACTIONSNAME}.GET_ALL: {",
+        "      return {",
+        "        ",
+        "      };",
+        "    }",
+        "    case ${ACTIONSNAME}.GET_ALL_SUCCESS: {",
+        "      return {",
+        "        ",
+        "      };",
+        "    }",
+        "    case ${ACTIONSNAME}.GET_ALL_FAILURE: {",
+        "      return {",
+        "        ",
+        "      };",
+        "    }",
+        "    default: {",
+        "      return state;",
+        "    }",
+        "  }",
+        "}"
+	],
+	"description": "Scaffolds an ngrx Reducer."
+  }
+}
